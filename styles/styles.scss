@@ -54,6 +54,7 @@ header{
     min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
+    padding: 0 !important;
 }
 
 section{
@@ -65,44 +66,22 @@ section{
     padding: 3rem 18rem;
 }
 
- .section{
+ .container{
+    display: none;
     transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
     background-color: var(--color-primary);
 }
-
-  .sec1{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-  .sec2{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-  .sec3{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-  .sec4{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-  .sec5{
-    display: none;
-    transform: translateY(0) scale(1);
-  }
   .active{
     display: block;
-    animation: scaleAnim 1s ease-in-out;
-    @keyframes scaleAnim {
+    animation: appear 1s ease-in-out;
+    transform: translateY(0) scaleY(1);
+    @keyframes appear {
       0%{
         transform: translateY(-100%) scaleY(0);
       }
       100%{
-        transform: translateY(-100%) scaleY(1);
+        transform: translateY(0) scaleY(1);
       }
     }
   }
@@ -186,7 +165,7 @@ section{
           left: 0;
           top: 0;
           z-index: -1;
-          clip-path: polygon(0 0, 70% 2%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 46% 0, 79% 10 0%, 0% 100%);
         }
         .image{
           border-radius: var(--br-sm-2);
@@ -207,7 +186,6 @@ section{
           }
         }
       }
-    }
       .right-header{
         display: flex;
         flex-direction: column;
@@ -224,7 +202,7 @@ section{
           line-height: 2rem;
         }
     }
-
+  }
     /*About*/
 .about-container{
   display: grid;
@@ -272,7 +250,6 @@ section{
             background-color: var(--color-grey-5);
           }
         }
-
       }
     }
   }
@@ -588,6 +565,8 @@ section{
         background-color: var(--color-grey-5);
         cursor: pointer;
         justify-content: center;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         margin: 0.4rem;
         transition: all .4s ease-in-out;
@@ -625,7 +604,7 @@ section{
         resize: none;
       }
     }
-    .input-control-2{
+    .i-c-2{
       display: flex;
       :last-child{
         margin-left: 1.5rem;
@@ -651,7 +630,6 @@ section{
   border: 1px solid var(--color-secondary);
   display: flex;
   align-self: flex-start;
-  display: flex;
   align-items: center;
   overflow: hidden;
   .btn-text{
@@ -696,7 +674,7 @@ section{
     span{
       color: var(--color-secondary);
     }
-    .big-text{
+    .bg-text{
       position: absolute;
       top: 50%;
       left: 50%;
