@@ -309,23 +309,23 @@ section {
   transition: all 0.4s ease-in-out;
   width: 60%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 90%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .html5 {
+  width: 70%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css3 {
-  width: 95%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
   width: 75%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .reactjs {
-  width: 60%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
+  width: 50%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .nodejs {
-  width: 87%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress php {
+.about-stats .progress-bars .progress-bar .progress-con .progress .flexbox {
   width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .git {
+  width: 85%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .php {
+  width: 60%;
 }
 
 .stat-title {
